@@ -10,12 +10,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
+
     public MemberService(MemberRepository memberRepository) {   // 외부에서 넣어주도록 -> 이걸 의존성 주입(Dependency Injection, DI)라고 한다.
         this.memberRepository = memberRepository;
     }
